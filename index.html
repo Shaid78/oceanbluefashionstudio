@@ -115,13 +115,13 @@ header.scrolled{border-bottom-color:var(--border);box-shadow:0 4px 24px rgba(10,
 
 /* PROCESS */
 .process{background:var(--ice)}
-.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;position:relative;margin-top:20px}
-.steps::before{content:'';position:absolute;top:26px;left:10%;right:10%;height:2px;background:linear-gradient(90deg,var(--aqua),var(--ocean));opacity:.35}
+.steps{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;position:relative;margin-top:20px}
+.steps::before{content:'';position:absolute;top:26px;left:8.33%;right:8.33%;height:2px;background:linear-gradient(90deg,var(--aqua),var(--ocean));opacity:.35}
 .step{text-align:center;position:relative}
 .step-num{width:52px;height:52px;border-radius:50%;background:#fff;border:2px solid var(--aqua);color:var(--ocean);display:flex;align-items:center;justify-content:center;font-family:var(--heading);font-weight:700;font-size:1.2rem;margin:0 auto 18px;position:relative;z-index:1;transition:.25s}
 .step:hover .step-num{background:var(--navy);border-color:var(--navy);color:#fff}
-.step h4{font-size:1rem;margin-bottom:6px;font-family:var(--body);font-weight:700;color:var(--navy)}
-.step p{font-size:.82rem;color:var(--muted);line-height:1.45}
+.step h4{font-size:.95rem;margin-bottom:6px;font-family:var(--body);font-weight:700;color:var(--navy)}
+.step p{font-size:.8rem;color:var(--muted);line-height:1.45}
 
 /* CERTIFICATIONS */
 .cert-badges{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;max-width:900px;margin:0 auto}
@@ -322,22 +322,18 @@ footer a{color:var(--aqua)}
     <div class="tab-panel active" data-panel="woven">
       <div class="products-grid">
         <div class="product reveal">
-          <!-- IMAGE 8 -->
           <img src="images/denim.jpg" alt="Denim Fabric" loading="lazy">
           <span data-i18n="w1">Denim</span>
         </div>
         <div class="product reveal">
-          <!-- IMAGE 7 -->
           <img src="images/shirt.jpg" alt="Stack of Shirts" loading="lazy">
           <span data-i18n="w2">Shirts</span>
         </div>
         <div class="product reveal">
-          <!-- IMAGE 6 -->
           <img src="images/trousers.jpg" alt="Trousers" loading="lazy">
           <span data-i18n="w3">Trousers</span>
         </div>
         <div class="product reveal">
-          <!-- IMAGE 5 -->
           <img src="images/jacket.jpg" alt="Winter Jackets" loading="lazy">
           <span data-i18n="w4">Jackets</span>
         </div>
@@ -348,22 +344,18 @@ footer a{color:var(--aqua)}
     <div class="tab-panel" data-panel="knit">
       <div class="products-grid">
         <div class="product reveal">
-          <!-- IMAGE 4 -->
           <img src="images/tshirt.jpg" alt="T-Shirt / Top" loading="lazy">
           <span data-i18n="k1">T-Shirts</span>
         </div>
         <div class="product reveal">
-          <!-- IMAGE 3 -->
           <img src="images/polo.jpg" alt="Polo Shirts" loading="lazy">
           <span data-i18n="k2">Polos</span>
         </div>
         <div class="product reveal">
-          <!-- IMAGE 2 -->
           <img src="images/sweater.jpg" alt="Knit Sweater" loading="lazy">
           <span data-i18n="k3">Sweaters</span>
         </div>
         <div class="product reveal">
-          <!-- IMAGE 1 -->
           <img src="images/kidswear.jpg" alt="Kidswear" loading="lazy">
           <span data-i18n="k4">Kidswear</span>
         </div>
@@ -383,10 +375,14 @@ footer a{color:var(--aqua)}
     </div>
     <div class="steps">
       <div class="step reveal"><div class="step-num">1</div><div><h4 data-i18n="p1t">Inquiry</h4><p data-i18n="p1d">Share your tech pack or idea</p></div></div>
-      <div class="step reveal"><div class="step-num">2</div><div><h4 data-i18n="p2t">Sampling</h4><p data-i18n="p2d">Fit and strike-off approvals</p></div></div>
-      <div class="step reveal"><div class="step-num">3</div><div><h4 data-i18n="p3t">Production</h4><p data-i18n="p3d">Factory allocation & follow-up</p></div></div>
-      <div class="step reveal"><div class="step-num">4</div><div><h4 data-i18n="p4t">Quality Control</h4><p data-i18n="p4d">Inline & final inspections</p></div></div>
-      <div class="step reveal"><div class="step-num">5</div><div><h4 data-i18n="p5t">Shipping</h4><p data-i18n="p5d">Documentation & delivery</p></div></div>
+      
+      <!-- NEW DESIGN STEP ADDED HERE -->
+      <div class="step reveal"><div class="step-num">2</div><div><h4 data-i18n="p_nt">Design</h4><p data-i18n="p_nd">Concept & tech pack development</p></div></div>
+      
+      <div class="step reveal"><div class="step-num">3</div><div><h4 data-i18n="p2t">Sampling</h4><p data-i18n="p2d">Fit and strike-off approvals</p></div></div>
+      <div class="step reveal"><div class="step-num">4</div><div><h4 data-i18n="p3t">Production</h4><p data-i18n="p3d">Factory allocation & follow-up</p></div></div>
+      <div class="step reveal"><div class="step-num">5</div><div><h4 data-i18n="p4t">Quality Control</h4><p data-i18n="p4d">Inline & final inspections</p></div></div>
+      <div class="step reveal"><div class="step-num">6</div><div><h4 data-i18n="p5t">Shipping</h4><p data-i18n="p5d">Documentation & delivery</p></div></div>
     </div>
   </div>
 </section>
@@ -499,7 +495,10 @@ const dict = {
     'services.title':'আমাদের সেবা','services.subtitle':'ধারণা থেকে ডেলিভারি পর্যন্ত সম্পূর্ণ গার্মেন্টস সোর্সিং সমাধান।',
     's1t':'সোর্সিং','s1d':'ফ্যাক্টরি শনাক্তকরণ, দর কষাকষি ও অর্ডার প্লেসমেন্ট।','s2t':'ডিজাইন ও ডেভেলপমেন্ট','s2d':'টেক প্যাক, স্যাম্পলিং ও ফ্যাব্রিক ডেভেলপমেন্ট।','s3t':'কোয়ালিটি কন্ট্রোল','s3d':'ইনলাইন, মিডলাইন ও ফাইনাল ইন্সপেকশন।','s4t':'লজিস্টিকস ও ডকুমেন্টেশন','s4d':'শিপিং, এলসি ও কমপ্লায়েন্স ডকুমেন্টস।',
     'products.title':'পণ্যসমূহ','products.subtitle':'প্রতিটি প্রধান ক্যাটাগরিতে ওভেন ও নিট।','woven':'ওভেন','knit':'নিট','w1':'ডেনিম','w2':'শার্ট','w3':'ট্রাউজার','w4':'জ্যাকেট','k1':'টি-শার্ট','k2':'পোলো','k3':'সোয়েটার','k4':'কিডসওয়্যার',
-    'process.title':'আমাদের প্রক্রিয়া','process.subtitle':'স্বচ্ছ, ধাপে ধাপে ওয়ার্কফ্লো।','p1t':'অনুসন্ধান','p1d':'টেক প্যাক বা আইডিয়া শেয়ার করুন','p2t':'স্যাম্পলিং','p2d':'ফিট ও স্ট্রাইক-অফ অনুমোদন','p3t':'উৎপাদন','p3d':'ফ্যাক্টরি বরাদ্দ ও ফলো-আপ','p4t':'কোয়ালিটি কন্ট্রোল','p4d':'ইনলাইন ও ফাইনাল ইন্সপেকশন','p5t':'শিপিং','p5d':'ডকুমেন্টস ও ডেলিভারি',
+    'process.title':'আমাদের প্রক্রিয়া','process.subtitle':'স্বচ্ছ, ধাপে ধাপে ওয়ার্কফ্লো।',
+    'p1t':'অনুসন্ধান','p1d':'টেক প্যাক বা আইডিয়া শেয়ার করুন',
+    'p_nt':'ডিজাইন','p_nd':'কনসেপ্ট ও টেক প্যাক ডেভেলপমেন্ট',
+    'p2t':'স্যাম্পলিং','p2d':'ফিট ও স্ট্রাইক-অফ অনুমোদন','p3t':'উৎপাদন','p3d':'ফ্যাক্টরি বরাদ্দ ও ফলো-আপ','p4t':'কোয়ালিটি কন্ট্রোল','p4d':'ইনলাইন ও ফাইনাল ইন্সপেকশন','p5t':'শিপিং','p5d':'ডকুমেন্টস ও ডেলিভারি',
     'cert.title':'সার্টিফিকেশন ও কমপ্লায়েন্স','cert.subtitle':'ওশানব্লু এবং আমাদের যাচাইকৃত পার্টনার ফ্যাক্টরি নেটওয়ার্কের অধীনে।',
     'why.title':'কেন আমাদের বেছে নেবেন','why1t':'দ্বৈত-দেশ সুবিধা','why1d':'বাংলাদেশ ও চীনে কার্যক্রম।','why2t':'কমপ্লায়েন্স ও সার্টিফিকেশন','why2d':'যাচাইকৃত ফ্যাক্টরি নেটওয়ার্ক।','why3t':'ডিজাইন ও ডেভেলপমেন্ট','why3d':'ইন-হাউস ক্রিয়েটিভ সাপোর্ট।',
     'contact.title':'যোগাযোগ করুন','contact.subtitle':'আমরা ২৪ ঘণ্টার মধ্যে উত্তর দিই।','bd':'বাংলাদেশ','cn':'চীন',
@@ -513,7 +512,10 @@ const dict = {
     'services.title':'我们的服务','services.subtitle':'从概念到交付的端到端服装采购解决方案。',
     's1t':'采购','s1d':'工厂识别、价格谈判和下单。','s2t':'设计与开发','s2d':'技术包、打样和面料开发。','s3t':'质量控制','s3d':'中检、巡检和尾期检验。','s4t':'物流与单证','s4d':'运输、信用证和合规单证。',
     'products.title':'产品','products.subtitle':'每个主要类别的梭织与针织产品。','woven':'梭织','knit':'针织','w1':'牛仔','w2':'衬衫','w3':'长裤','w4':'外套','k1':'T恤','k2':'Polo衫','k3':'毛衫','k4':'童装',
-    'process.title':'我们的流程','process.subtitle':'透明、按步骤的工作流程。','p1t':'询盘','p1d':'分享您的技术包或想法','p2t':'打样','p2d':'合身与批色确认','p3t':'生产','p3d':'工厂分配与跟单','p4t':'质量控制','p4d':'巡检与尾期检验','p5t':'出货','p5d':'单证与交付',
+    'process.title':'我们的流程','process.subtitle':'透明、按步骤的工作流程。',
+    'p1t':'询盘','p1d':'分享您的技术包或想法',
+    'p_nt':'设计','p_nd':'概念与技术包开发',
+    'p2t':'打样','p2d':'合身与批色确认','p3t':'生产','p3d':'工厂分配与跟单','p4t':'质量控制','p4d':'巡检与尾期检验','p5t':'出货','p5d':'单证与交付',
     'cert.title':'认证与合规','cert.subtitle':'由 OceanBlue 及我们经验证的合作工厂网络所持有。',
     'why.title':'为何选择我们','why1t':'双国优势','why1d':'孟加拉与中国双地运营。','why2t':'合规与认证','why2d':'经验证的工厂网络。','why3t':'设计与开发','why3d':'内部创意支持。',
     'contact.title':'联系我们','contact.subtitle':'我们将在 24 小时内回复。','bd':'孟加拉国','cn':'中国',
