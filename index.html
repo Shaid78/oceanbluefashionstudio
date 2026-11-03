@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en" class="js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OceanBlue Fashion Studio — Garment Sourcing in Bangladesh & China</title>
+<meta name="description" content="OceanBlue Fashion Studio is a full-service buying house in Bangladesh & China offering garment sourcing, design and product development for woven and knit apparel.">
+<meta property="og:title" content="OceanBlue Fashion Studio — Garment Sourcing">
+<meta property="og:description" content="Your trusted sourcing partner in Bangladesh & China. Woven & knit garments, design and development.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0A2540">
+<script>document.documentElement.classList.add('js');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0A2540;
+  --navy-dark:#071A2F;
+  --ocean:#0B6FA4;
+  --aqua:#00B4D8;
+  --ice:#F4F8FB;
+  --white:#FFFFFF;
+  --text:#33475B;
+  --muted:#7A8CA0;
+  --border:#E1E8EF;
+  --heading:"Times New Roman", Times, serif;
+  --body:'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--text);background:var(--white);line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:var(--heading);color:var(--navy);font-weight:700;line-height:1.2}
+a{color:var(--ocean);text-decoration:none}
+img{max-width:100%;display:block}
+.container{max-width:1140px;margin:0 auto;padding:0 24px}
+section{padding:90px 0}
+.section-title{font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:14px;letter-spacing:-.5px}
+.section-subtitle{color:var(--muted);font-size:1.02rem;max-width:620px}
+.section-head{text-align:center;margin-bottom:56px}
+.section-head .section-subtitle{margin:0 auto}
+.eyebrow{display:inline-block;font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--aqua);font-weight:700;margin-bottom:12px;font-family:var(--body)}
+
+/* HEADER */
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid transparent;transition:.3s}
+header.scrolled{border-bottom-color:var(--border);box-shadow:0 4px 24px rgba(10,37,64,.06)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:76px;gap:20px}
+.logo{display:flex;align-items:center;gap:10px;font-family:var(--heading);font-size:1.35rem;font-weight:700;color:var(--navy);white-space:nowrap}
+.logo svg{flex-shrink:0}
+.logo .blue{color:var(--ocean)}
+.logo .studio{font-size:.85rem;font-family:var(--body);font-weight:500;color:var(--muted);display:block;margin-top:-6px;letter-spacing:.02em}
+.nav-links{display:flex;gap:28px;align-items:center}
+.nav-links a{font-size:.92rem;color:var(--navy);font-weight:500;transition:color .2s}
+.nav-links a:hover{color:var(--aqua)}
+.nav-actions{display:flex;align-items:center;gap:14px}
+.lang-switch{display:flex;gap:2px;border:1px solid var(--border);border-radius:999px;padding:3px;background:#fff}
+.lang-btn{font-family:var(--body);font-size:.75rem;font-weight:600;border:none;background:none;padding:5px 10px;border-radius:999px;cursor:pointer;color:var(--muted);transition:.2s}
+.lang-btn.active{background:var(--navy);color:#fff}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:999px;font-weight:600;font-size:.9rem;transition:.25s;border:2px solid transparent;cursor:pointer;font-family:var(--body)}
+.btn-primary{background:var(--ocean);color:#fff}
+.btn-primary:hover{background:var(--navy);transform:translateY(-2px)}
+.btn-wa{background:#25D366;color:#fff}
+.btn-wa:hover{background:#1EBE5A;transform:translateY(-2px)}
+.btn-outline{background:transparent;color:#fff;border-color:rgba(255,255,255,.5)}
+.btn-outline:hover{background:#fff;color:var(--navy)}
+.nav-toggle{display:none;background:none;border:none;cursor:pointer;padding:8px}
+
+/* HERO */
+.hero{position:relative;background:linear-gradient(160deg,#0A2540 0%,#0B3D6B 48%,#0B6FA4 100%);color:#fff;padding:120px 0 140px;overflow:hidden}
+#particles{position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+.hero::after{content:'';position:absolute;left:0;right:0;bottom:-1px;height:90px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 90' preserveAspectRatio='none'%3E%3Cpath fill='%23FFFFFF' d='M0,40 C240,90 480,0 720,30 C960,60 1200,90 1440,40 L1440,90 L0,90 Z'/%3E%3C/svg%3E") no-repeat center bottom/cover;z-index:1}
+.hero-inner{position:relative;z-index:2;text-align:center;max-width:860px;margin:0 auto}
+.hero h1{font-size:clamp(2.4rem,6vw,4.2rem);color:#fff;letter-spacing:-1.5px;margin-bottom:22px}
+.hero p{font-size:clamp(1.02rem,2vw,1.22rem);color:rgba(255,255,255,.85);max-width:600px;margin:0 auto 38px}
+.hero-cta{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.trust-strip{margin-top:44px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.7);font-weight:500}
+.trust-strip span{display:flex;align-items:center;gap:14px}
+.trust-strip span:not(:last-child)::after{content:'·';color:var(--aqua)}
+
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center}
+.about-text .section-subtitle{margin-top:20px}
+.about-text p{margin-bottom:16px;color:var(--text)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px}
+.stat{background:var(--ice);border-radius:16px;padding:22px 16px;text-align:center;border:1px solid var(--border)}
+.stat b{display:block;font-family:var(--heading);font-size:2rem;color:var(--ocean);line-height:1}
+.stat span{font-size:.78rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-top:8px;display:block}
+.about-visual{background:linear-gradient(135deg,var(--navy),var(--ocean));border-radius:24px;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;color:#fff;text-align:center;padding:40px}
+.about-visual::before{content:'';position:absolute;width:380px;height:380px;border-radius:50%;background:radial-gradient(circle,rgba(0,180,216,.35),transparent 70%);top:-100px;right:-100px}
+.about-visual svg{width:96px;height:96px;opacity:.95;margin-bottom:18px}
+.about-visual p{font-family:var(--heading);font-size:1.5rem;position:relative;z-index:1;line-height:1.35}
+
+/* SERVICES */
+.services{background:var(--ice)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+.card{background:#fff;border-radius:20px;padding:34px 28px;border:1px solid var(--border);transition:.3s;position:relative;overflow:hidden}
+.card:hover{transform:translateY(-6px);box-shadow:0 20px 40px rgba(10,37,64,.1);border-color:transparent}
+.card-icon{width:52px;height:52px;border-radius:14px;background:linear-gradient(135deg,var(--ocean),var(--aqua));display:flex;align-items:center;justify-content:center;margin-bottom:20px;color:#fff}
+.card-icon svg{width:26px;height:26px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.card h3{font-size:1.22rem;margin-bottom:10px}
+.card p{font-size:.92rem;color:var(--muted)}
+
+/* PRODUCTS */
+.tabs{display:flex;gap:8px;justify-content:center;margin-bottom:40px;background:var(--ice);padding:6px;border-radius:999px;width:fit-content;margin-left:auto;margin-right:auto;border:1px solid var(--border)}
+.tab{border:none;background:none;padding:10px 26px;border-radius:999px;font-family:var(--body);font-weight:600;font-size:.9rem;color:var(--muted);cursor:pointer;transition:.25s}
+.tab.active{background:var(--navy);color:#fff}
+.tab-panel{display:none}
+.tab-panel.active{display:block;animation:fadeIn .4s ease}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.products-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}
+.product{background:#fff;border:1px solid var(--border);border-radius:18px;padding:20px;text-align:center;transition:.3s;overflow:hidden}
+.product:hover{border-color:var(--aqua);box-shadow:0 14px 30px rgba(11,111,164,.1);transform:translateY(-4px)}
+.product img{width:100%;height:200px;object-fit:cover;border-radius:12px;margin-bottom:14px;background:var(--ice)}
+.product span{font-weight:600;font-size:.95rem;color:var(--navy)}
+
+/* PROCESS */
+.process{background:var(--ice)}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;position:relative;margin-top:20px}
+.steps::before{content:'';position:absolute;top:26px;left:10%;right:10%;height:2px;background:linear-gradient(90deg,var(--aqua),var(--ocean));opacity:.35}
+.step{text-align:center;position:relative}
+.step-num{width:52px;height:52px;border-radius:50%;background:#fff;border:2px solid var(--aqua);color:var(--ocean);display:flex;align-items:center;justify-content:center;font-family:var(--heading);font-weight:700;font-size:1.2rem;margin:0 auto 18px;position:relative;z-index:1;transition:.25s}
+.step:hover .step-num{background:var(--navy);border-color:var(--navy);color:#fff}
+.step h4{font-size:1rem;margin-bottom:6px;font-family:var(--body);font-weight:700;color:var(--navy)}
+.step p{font-size:.82rem;color:var(--muted);line-height:1.45}
+
+/* CERTIFICATIONS */
+.cert-badges{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;max-width:900px;margin:0 auto}
+.badge{border:2px solid var(--navy);color:var(--navy);padding:12px 22px;border-radius:999px;font-weight:600;font-size:.85rem;letter-spacing:.03em;transition:.25s;background:#fff;cursor:default}
+.badge:hover{background:var(--aqua);border-color:var(--aqua);color:#fff;transform:translateY(-3px);box-shadow:0 10px 24px rgba(0,180,216,.3)}
+
+/* WHY */
+.why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px}
+.why-card{text-align:center;padding:36px 24px;border-radius:20px;background:var(--ice);border:1px solid var(--border);transition:.3s}
+.why-card:hover{background:#fff;box-shadow:0 16px 34px rgba(10,37,64,.08)}
+.why-card .ic{width:60px;height:60px;margin:0 auto 20px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(11,111,164,.12)}
+.why-card .ic svg{width:28px;height:28px;stroke:var(--ocean);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.why-card h3{font-size:1.15rem;margin-bottom:10px}
+.why-card p{font-size:.9rem;color:var(--muted)}
+
+/* CONTACT */
+.contact{background:var(--navy);color:#fff}
+.contact h2,.contact .eyebrow{color:#fff}
+.contact .section-subtitle{color:rgba(255,255,255,.7)}
+.addresses{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-bottom:44px}
+.addr{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:26px;transition:.25s}
+.addr:hover{background:rgba(255,255,255,.08);border-color:var(--aqua)}
+.addr h4{color:var(--aqua);font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;font-family:var(--body);font-weight:700;margin-bottom:10px}
+.addr p{color:#fff;font-size:1.05rem;font-family:var(--heading);font-weight:600}
+.contact-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.contact-btns .btn{padding:14px 26px;font-size:.92rem}
+.contact-btns svg{width:18px;height:18px;fill:currentColor}
+.copy-btn{background:transparent;border:2px solid rgba(255,255,255,.3);color:#fff}
+.copy-btn:hover{background:#fff;color:var(--navy)}
+
+/* FOOTER */
+footer{background:var(--navy-dark);color:rgba(255,255,255,.6);padding:26px 0;font-size:.85rem;text-align:center}
+footer a{color:var(--aqua)}
+
+/* FLOATING WA */
+.fab{position:fixed;right:20px;bottom:20px;width:58px;height:58px;border-radius:50%;background:#25D366;display:none;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(37,211,102,.45);z-index:60;transition:.25s}
+.fab:hover{transform:scale(1.08)}
+.fab svg{width:30px;height:30px;fill:#fff}
+
+/* REVEAL */
+.js .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.js .reveal.in{opacity:1;transform:none}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .about-grid{grid-template-columns:1fr;gap:40px}
+  .about-visual{aspect-ratio:16/10}
+  .steps{grid-template-columns:1fr;gap:20px}
+  .steps::before{display:none}
+  .step{display:flex;text-align:left;gap:16px;align-items:flex-start}
+  .step-num{margin:0;flex-shrink:0;width:44px;height:44px;font-size:1rem}
+  .addresses{grid-template-columns:1fr}
+}
+@media(max-width:768px){
+  section{padding:64px 0}
+  .nav-links{display:none;position:absolute;top:76px;left:0;right:0;background:#fff;flex-direction:column;padding:20px;gap:16px;border-bottom:1px solid var(--border);box-shadow:0 10px 20px rgba(10,37,64,.06)}
+  .nav-links.open{display:flex}
+  .nav-toggle{display:block}
+  .hero{padding:90px 0 120px}
+  .fab{display:flex}
+  .stats{grid-template-columns:1fr 1fr}
+  .hero-cta .btn{width:100%}
+  .contact-btns .btn{width:100%}
+}
+</style>
+</head>
+<body>
+
+<header id="header">
+  <div class="container nav">
+    <a href="#" class="logo" aria-label="OceanBlue Fashion Studio">
+      <svg width="34" height="34" viewBox="0 0 34 34" fill="none">
+        <path d="M2 20c3-4 6-4 9 0s6 4 9 0 6-4 9 0" stroke="#00B4D8" stroke-width="2.4" stroke-linecap="round"/>
+        <path d="M2 26c3-4 6-4 9 0s6 4 9 0 6-4 9 0" stroke="#0B6FA4" stroke-width="2.4" stroke-linecap="round" opacity=".7"/>
+        <circle cx="24" cy="10" r="4" fill="#0A2540"/>
+      </svg>
+      <span>
+        <span>Ocean<span class="blue">Blue</span></span>
+        <span class="studio">Fashion Studio</span>
+      </span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about"><span data-i18n="nav.about">About</span></a>
+      <a href="#services"><span data-i18n="nav.services">Services</span></a>
+      <a href="#products"><span data-i18n="nav.products">Products</span></a>
+      <a href="#process"><span data-i18n="nav.process">Process</span></a>
+      <a href="#certifications"><span data-i18n="nav.certifications">Certifications</span></a>
+    </nav>
+    <div class="nav-actions">
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="bn">বাংলা</button>
+        <button class="lang-btn" data-lang="zh">中文</button>
+      </div>
+      <a href="#contact" class="btn btn-primary" data-i18n="nav.contact">Contact Us</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0A2540" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero" id="home">
+  <canvas id="particles"></canvas>
+  <div class="container hero-inner">
+    <h1 data-i18n="hero.title">Sourcing. Design. Development.</h1>
+    <p data-i18n="hero.subtitle">Your trusted garment sourcing partner across Bangladesh & China.</p>
+    <div class="hero-cta">
+      <a href="https://wa.me/8801675330378" target="_blank" rel="noopener" class="btn btn-wa">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="#fff"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.3-.1-.5-.1-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.2-1.4-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.3 5.2 4.5 2.6 1 3.1.8 3.7.8.6-.1 1.9-.8 2.2-1.5.3-.8.3-1.4.2-1.5-.1-.2-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.4 1.3 4.8L2 22l5.3-1.3c1.4.8 3 1.3 4.7 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
+        <span data-i18n="hero.cta1">Chat on WhatsApp</span>
+      </a>
+      <a href="#services" class="btn btn-outline" data-i18n="hero.cta2">Our Services</a>
+    </div>
+    <div class="trust-strip">
+      <span data-i18n="hero.trust">8 Years · 2 Countries · Woven & Knit</span>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <span class="eyebrow" data-i18n="nav.about">About</span>
+        <h2 class="section-title" data-i18n="about.title">About Us</h2>
+        <p data-i18n="about.p1">OceanBlue Fashion Studio is a full-service buying house with operations in Gazipur, Bangladesh and Fuzhou, China.</p>
+        <p data-i18n="about.p2">We manage the entire supply chain — sourcing, design and development, quality control and logistics — under one roof.</p>
+        <div class="stats">
+          <div class="stat"><b>8</b><span data-i18n="s1l">Years of Experience</span></div>
+          <div class="stat"><b>2</b><span data-i18n="s2l">Sourcing Countries</span></div>
+          <div class="stat"><b>8+</b><span data-i18n="s3l">Product Categories</span></div>
+        </div>
+      </div>
+      <div class="about-visual reveal">
+        <div>
+          <svg viewBox="0 0 64 64" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="32" cy="32" r="26"/>
+            <path d="M6 32h52M32 6c8 8 8 44 0 52M32 6c-8 8-8 44 0 52"/>
+          </svg>
+          <p data-i18n="about.visual">Two sourcing hubs.<br>One trusted partner.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Services</span>
+      <h2 class="section-title" data-i18n="services.title">Our Services</h2>
+      <p class="section-subtitle" data-i18n="services.subtitle">End-to-end garment sourcing solutions, from concept to delivery.</p>
+    </div>
+    <div class="cards">
+      <div class="card reveal">
+        <div class="card-icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div>
+        <h3 data-i18n="s1t">Sourcing</h3>
+        <p data-i18n="s1d">Factory identification, price negotiation and order placement.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.6 7.6"/></svg></div>
+        <h3 data-i18n="s2t">Design & Development</h3>
+        <p data-i18n="s2d">Tech packs, sampling and fabric development.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></div>
+        <h3 data-i18n="s3t">Quality Control</h3>
+        <p data-i18n="s3d">Inline, mid-line and final inspections.</p>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M3 7h13v10H3zM16 10h3l2 3v4h-5"/><circle cx="7" cy="18" r="1.6"/><circle cx="18" cy="18" r="1.6"/></svg></div>
+        <h3 data-i18n="s4t">Logistics & Documentation</h3>
+        <p data-i18n="s4d">Shipping, LC and compliance documentation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Products</span>
+      <h2 class="section-title" data-i18n="products.title">Products</h2>
+      <p class="section-subtitle" data-i18n="products.subtitle">Woven and knit across every major category.</p>
+    </div>
+    <div class="tabs reveal">
+      <button class="tab active" data-tab="woven" data-i18n="woven">Woven</button>
+      <button class="tab" data-tab="knit" data-i18n="knit">Knit</button>
+    </div>
+    
+    <!-- WOVEN TAB -->
+    <div class="tab-panel active" data-panel="woven">
+      <div class="products-grid">
+        <div class="product reveal">
+          <!-- IMAGE 8 -->
+          <img src="images/denim.jpg" alt="Denim Fabric" loading="lazy">
+          <span data-i18n="w1">Denim</span>
+        </div>
+        <div class="product reveal">
+          <!-- IMAGE 7 -->
+          <img src="images/shirt.jpg" alt="Stack of Shirts" loading="lazy">
+          <span data-i18n="w2">Shirts</span>
+        </div>
+        <div class="product reveal">
+          <!-- IMAGE 6 -->
+          <img src="images/trousers.jpg" alt="Trousers" loading="lazy">
+          <span data-i18n="w3">Trousers</span>
+        </div>
+        <div class="product reveal">
+          <!-- IMAGE 5 -->
+          <img src="images/jacket.jpg" alt="Winter Jackets" loading="lazy">
+          <span data-i18n="w4">Jackets</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- KNIT TAB -->
+    <div class="tab-panel" data-panel="knit">
+      <div class="products-grid">
+        <div class="product reveal">
+          <!-- IMAGE 4 -->
+          <img src="images/tshirt.jpg" alt="T-Shirt / Top" loading="lazy">
+          <span data-i18n="k1">T-Shirts</span>
+        </div>
+        <div class="product reveal">
+          <!-- IMAGE 3 -->
+          <img src="images/polo.jpg" alt="Polo Shirts" loading="lazy">
+          <span data-i18n="k2">Polos</span>
+        </div>
+        <div class="product reveal">
+          <!-- IMAGE 2 -->
+          <img src="images/sweater.jpg" alt="Knit Sweater" loading="lazy">
+          <span data-i18n="k3">Sweaters</span>
+        </div>
+        <div class="product reveal">
+          <!-- IMAGE 1 -->
+          <img src="images/kidswear.jpg" alt="Kidswear" loading="lazy">
+          <span data-i18n="k4">Kidswear</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process" id="process">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Process</span>
+      <h2 class="section-title" data-i18n="process.title">Our Process</h2>
+      <p class="section-subtitle" data-i18n="process.subtitle">A transparent, step-by-step workflow.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="step-num">1</div><div><h4 data-i18n="p1t">Inquiry</h4><p data-i18n="p1d">Share your tech pack or idea</p></div></div>
+      <div class="step reveal"><div class="step-num">2</div><div><h4 data-i18n="p2t">Sampling</h4><p data-i18n="p2d">Fit and strike-off approvals</p></div></div>
+      <div class="step reveal"><div class="step-num">3</div><div><h4 data-i18n="p3t">Production</h4><p data-i18n="p3d">Factory allocation & follow-up</p></div></div>
+      <div class="step reveal"><div class="step-num">4</div><div><h4 data-i18n="p4t">Quality Control</h4><p data-i18n="p4d">Inline & final inspections</p></div></div>
+      <div class="step reveal"><div class="step-num">5</div><div><h4 data-i18n="p5t">Shipping</h4><p data-i18n="p5d">Documentation & delivery</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Compliance</span>
+      <h2 class="section-title" data-i18n="cert.title">Certifications & Compliance</h2>
+      <p class="section-subtitle" data-i18n="cert.subtitle">Held by OceanBlue and our verified partner factory network.</p>
+    </div>
+    <div class="cert-badges reveal">
+      <div class="badge">BGMEA</div>
+      <div class="badge">WRAP</div>
+      <div class="badge">amfori BSCI</div>
+      <div class="badge">Sedex SMETA</div>
+      <div class="badge">OEKO-TEX® Standard 100</div>
+      <div class="badge">GOTS</div>
+      <div class="badge">GRS</div>
+      <div class="badge">ISO 9001</div>
+      <div class="badge">Accord / RSC</div>
+      <div class="badge">Fair Trade</div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="services" id="why">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Why Us</span>
+      <h2 class="section-title" data-i18n="why.title">Why Choose Us</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></div>
+        <h3 data-i18n="why1t">Dual-Country Advantage</h3>
+        <p data-i18n="why1d">Operations in both Bangladesh and China.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-4 8-8 9-4-1-8-4-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <h3 data-i18n="why2t">Compliance & Certifications</h3>
+        <p data-i18n="why2d">A verified partner factory network.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/></svg></div>
+        <h3 data-i18n="why3t">Design & Development</h3>
+        <p data-i18n="why3d">In-house creative support.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Contact</span>
+      <h2 class="section-title" data-i18n="contact.title">Get in Touch</h2>
+      <p class="section-subtitle" data-i18n="contact.subtitle">We reply within 24 hours.</p>
+    </div>
+    <div class="addresses reveal">
+      <div class="addr">
+        <h4 data-i18n="bd">Bangladesh</h4>
+        <p>Tongi West, Gazipur, Bangladesh</p>
+      </div>
+      <div class="addr">
+        <h4 data-i18n="cn">China</h4>
+        <p>Fuzhou, Fujian, China</p>
+      </div>
+    </div>
+    <div class="contact-btns reveal">
+      <a href="mailto:info@obfs.com" class="btn btn-outline">
+        <svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 6l8 6 8-6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        info@obfs.com
+      </a>
+      <a href="https://wa.me/8801675330378" target="_blank" rel="noopener" class="btn btn-wa">
+        <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.3-.1-.5-.1-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.2-1.4-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.3 5.2 4.5 2.6 1 3.1.8 3.7.8.6-.1 1.9-.8 2.2-1.5.3-.8.3-1.4.2-1.5-.1-.2-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.4 1.3 4.8L2 22l5.3-1.3c1.4.8 3 1.3 4.7 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
+        +880 1675 330378
+      </a>
+      <button class="btn copy-btn" id="wechatBtn" data-wechat="shaid_pranto">
+        <svg viewBox="0 0 24 24" style="fill:currentColor"><path d="M8.7 4C4.9 4 1.8 6.6 1.8 9.8c0 1.8 1 3.4 2.6 4.5l-.6 2 2.3-1.2c.8.2 1.7.4 2.6.4.3 0 .5 0 .8-.1-.2-.6-.3-1.2-.3-1.8 0-3.1 3-5.6 6.8-5.6.3 0 .5 0 .8.1C16.2 6 12.8 4 8.7 4zM6.4 7.5c.5 0 .9.4.9.9s-.4.9-.9.9-.9-.4-.9-.9.4-.9.9-.9zm4.7 0c.5 0 .9.4.9.9s-.4.9-.9.9-.9-.4-.9-.9.4-.9.9-.9z"/><path d="M22.2 13.6c0-2.7-2.6-4.8-5.7-4.8s-5.7 2.2-5.7 4.8 2.6 4.8 5.7 4.8c.7 0 1.4-.1 2-.3l1.9 1-.5-1.7c1.4-.9 2.3-2.3 2.3-3.8zm-7.6-1.2c.4 0 .8.3.8.8s-.3.8-.8.8-.8-.3-.8-.8.3-.8.8-.8zm3.9 0c.4 0 .8.3.8.8s-.3.8-.8.8-.8-.3-.8-.8.3-.8.8-.8z"/></svg>
+        <span>WeChat: shaid_pranto</span>
+      </button>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <p data-i18n="footer">© 2026 OceanBlue Fashion Studio · Tongi West, Gazipur, Bangladesh · Fuzhou, Fujian, China</p>
+  </div>
+</footer>
+
+<a href="https://wa.me/8801675330378" target="_blank" rel="noopener" class="fab" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.3-.1-.5-.1-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.2-1.4-.8-.7-1.4-1.6-1.5-1.9-.2-.3 0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.3 5.2 4.5 2.6 1 3.1.8 3.7.8.6-.1 1.9-.8 2.2-1.5.3-.8.3-1.4.2-1.5-.1-.2-.3-.2-.6-.3zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.4 1.3 4.8L2 22l5.3-1.3c1.4.8 3 1.3 4.7 1.3 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg>
+</a>
+
+<script>
+/* ---------- TRANSLATIONS ---------- */
+const dict = {
+  en:{},
+  bn:{
+    'nav.about':'আমাদের সম্পর্কে','nav.services':'সেবাসমূহ','nav.products':'পণ্যসমূহ','nav.process':'প্রক্রিয়া','nav.certifications':'সার্টিফিকেশন','nav.contact':'যোগাযোগ',
+    'hero.title':'সোর্সিং। ডিজাইন। ডেভেলপমেন্ট।','hero.subtitle':'বাংলাদেশ ও চীনে আপনার বিশ্বস্ত গার্মেন্টস সোর্সিং পার্টনার।','hero.cta1':'হোয়াটসঅ্যাপে কথা বলুন','hero.cta2':'আমাদের সেবা','hero.trust':'৮ বছর · ২ দেশ · ওভেন ও নিট',
+    'about.title':'আমাদের সম্পর্কে','about.p1':'ওশানব্লু ফ্যাশন স্টুডিও একটি পূর্ণ-সেবা বায়িং হাউস, যার কার্যক্রম গাজীপুর, বাংলাদেশ এবং ফুচৌ, চীনে বিস্তৃত।','about.p2':'আমরা সোর্সিং, ডিজাইন ও ডেভেলপমেন্ট, কোয়ালিটি কন্ট্রোল এবং লজিস্টিকস — সম্পূর্ণ সাপ্লাই চেইন এক ছাদের নিচে পরিচালনা করি।','about.visual':'দুটি সোর্সিং হাব।<br>এক নির্ভরযোগ্য পার্টনার।',
+    's1l':'বছরের অভিজ্ঞতা','s2l':'সোর্সিং দেশ','s3l':'পণ্য ক্যাটাগরি',
+    'services.title':'আমাদের সেবা','services.subtitle':'ধারণা থেকে ডেলিভারি পর্যন্ত সম্পূর্ণ গার্মেন্টস সোর্সিং সমাধান।',
+    's1t':'সোর্সিং','s1d':'ফ্যাক্টরি শনাক্তকরণ, দর কষাকষি ও অর্ডার প্লেসমেন্ট।','s2t':'ডিজাইন ও ডেভেলপমেন্ট','s2d':'টেক প্যাক, স্যাম্পলিং ও ফ্যাব্রিক ডেভেলপমেন্ট।','s3t':'কোয়ালিটি কন্ট্রোল','s3d':'ইনলাইন, মিডলাইন ও ফাইনাল ইন্সপেকশন।','s4t':'লজিস্টিকস ও ডকুমেন্টেশন','s4d':'শিপিং, এলসি ও কমপ্লায়েন্স ডকুমেন্টস।',
+    'products.title':'পণ্যসমূহ','products.subtitle':'প্রতিটি প্রধান ক্যাটাগরিতে ওভেন ও নিট।','woven':'ওভেন','knit':'নিট','w1':'ডেনিম','w2':'শার্ট','w3':'ট্রাউজার','w4':'জ্যাকেট','k1':'টি-শার্ট','k2':'পোলো','k3':'সোয়েটার','k4':'কিডসওয়্যার',
+    'process.title':'আমাদের প্রক্রিয়া','process.subtitle':'স্বচ্ছ, ধাপে ধাপে ওয়ার্কফ্লো।','p1t':'অনুসন্ধান','p1d':'টেক প্যাক বা আইডিয়া শেয়ার করুন','p2t':'স্যাম্পলিং','p2d':'ফিট ও স্ট্রাইক-অফ অনুমোদন','p3t':'উৎপাদন','p3d':'ফ্যাক্টরি বরাদ্দ ও ফলো-আপ','p4t':'কোয়ালিটি কন্ট্রোল','p4d':'ইনলাইন ও ফাইনাল ইন্সপেকশন','p5t':'শিপিং','p5d':'ডকুমেন্টস ও ডেলিভারি',
+    'cert.title':'সার্টিফিকেশন ও কমপ্লায়েন্স','cert.subtitle':'ওশানব্লু এবং আমাদের যাচাইকৃত পার্টনার ফ্যাক্টরি নেটওয়ার্কের অধীনে।',
+    'why.title':'কেন আমাদের বেছে নেবেন','why1t':'দ্বৈত-দেশ সুবিধা','why1d':'বাংলাদেশ ও চীনে কার্যক্রম।','why2t':'কমপ্লায়েন্স ও সার্টিফিকেশন','why2d':'যাচাইকৃত ফ্যাক্টরি নেটওয়ার্ক।','why3t':'ডিজাইন ও ডেভেলপমেন্ট','why3d':'ইন-হাউস ক্রিয়েটিভ সাপোর্ট।',
+    'contact.title':'যোগাযোগ করুন','contact.subtitle':'আমরা ২৪ ঘণ্টার মধ্যে উত্তর দিই।','bd':'বাংলাদেশ','cn':'চীন',
+    'footer':'© ২০২৬ ওশানব্লু ফ্যাশন স্টুডিও · টঙ্গি ওয়েস্ট, গাজীপুর, বাংলাদেশ · ফুচৌ, ফুজিয়ান, চীন'
+  },
+  zh:{
+    'nav.about':'关于我们','nav.services':'服务','nav.products':'产品','nav.process':'流程','nav.certifications':'认证','nav.contact':'联系我们',
+    'hero.title':'采购 · 设计 · 开发','hero.subtitle':'您在孟加拉国与中国的可信赖服装采购合作伙伴。','hero.cta1':'WhatsApp 咨询','hero.cta2':'我们的服务','hero.trust':'8 年 · 2 个国家 · 梭织与针织',
+    'about.title':'关于我们','about.p1':'OceanBlue Fashion Studio 是一家全方位采购公司，业务遍及孟加拉国加济布尔和中国福州。','about.p2':'我们提供采购、设计开发、质量控制和物流的端到端供应链管理。','about.visual':'两个采购中心。<br>一个可信赖的合作伙伴。',
+    's1l':'年经验','s2l':'采购国家','s3l':'产品类别',
+    'services.title':'我们的服务','services.subtitle':'从概念到交付的端到端服装采购解决方案。',
+    's1t':'采购','s1d':'工厂识别、价格谈判和下单。','s2t':'设计与开发','s2d':'技术包、打样和面料开发。','s3t':'质量控制','s3d':'中检、巡检和尾期检验。','s4t':'物流与单证','s4d':'运输、信用证和合规单证。',
+    'products.title':'产品','products.subtitle':'每个主要类别的梭织与针织产品。','woven':'梭织','knit':'针织','w1':'牛仔','w2':'衬衫','w3':'长裤','w4':'外套','k1':'T恤','k2':'Polo衫','k3':'毛衫','k4':'童装',
+    'process.title':'我们的流程','process.subtitle':'透明、按步骤的工作流程。','p1t':'询盘','p1d':'分享您的技术包或想法','p2t':'打样','p2d':'合身与批色确认','p3t':'生产','p3d':'工厂分配与跟单','p4t':'质量控制','p4d':'巡检与尾期检验','p5t':'出货','p5d':'单证与交付',
+    'cert.title':'认证与合规','cert.subtitle':'由 OceanBlue 及我们经验证的合作工厂网络所持有。',
+    'why.title':'为何选择我们','why1t':'双国优势','why1d':'孟加拉与中国双地运营。','why2t':'合规与认证','why2d':'经验证的工厂网络。','why3t':'设计与开发','why3d':'内部创意支持。',
+    'contact.title':'联系我们','contact.subtitle':'我们将在 24 小时内回复。','bd':'孟加拉国','cn':'中国',
+    'footer':'© 2026 OceanBlue Fashion Studio · 孟加拉国加济布尔 Tongi West · 中国福建福州'
+  }
+};
+document.querySelectorAll('[data-i18n]').forEach(el => { dict.en[el.dataset.i18n] = el.innerHTML; });
+
+function setLang(lang){
+  document.documentElement.lang = lang === 'zh' ? 'zh-CN' : lang;
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const k = el.dataset.i18n;
+    if(dict[lang] && dict[lang][k] !== undefined) el.innerHTML = dict[lang][k];
+    else if(dict.en[k] !== undefined) el.innerHTML = dict.en[k];
+  });
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
+  try{ localStorage.setItem('obfs-lang', lang); }catch(e){}
+}
+document.querySelectorAll('.lang-btn').forEach(btn => btn.addEventListener('click', () => setLang(btn.dataset.lang)));
+try{
+  const saved = localStorage.getItem('obfs-lang');
+  if(saved && dict[saved]) setLang(saved);
+}catch(e){}
+
+/* ---------- HEADER SCROLL ---------- */
+const header = document.getElementById('header');
+window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 10));
+
+/* ---------- MOBILE NAV ---------- */
+document.getElementById('navToggle').addEventListener('click', () => {
+  document.getElementById('navLinks').classList.toggle('open');
+});
+document.querySelectorAll('#navLinks a').forEach(a => a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open')));
+
+/* ---------- PRODUCT TABS ---------- */
+document.querySelectorAll('.tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    document.querySelectorAll('.tab-panel').forEach(p => p.classList.toggle('active', p.dataset.panel === tab.dataset.tab));
+  });
+});
+
+/* ---------- WECHAT COPY ---------- */
+document.getElementById('wechatBtn').addEventListener('click', function(){
+  const id = this.dataset.wechat;
+  const label = this.querySelector('span');
+  const orig = label.textContent;
+  navigator.clipboard.writeText(id).then(() => {
+    label.textContent = '✔ Copied: ' + id;
+    setTimeout(() => label.textContent = orig, 1800);
+  }).catch(() => { alert('WeChat ID: ' + id); });
+});
+
+/* ---------- SCROLL REVEAL ---------- */
+const rio = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in'); rio.unobserve(e.target); } });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal').forEach(el => rio.observe(el));
+
+/* ---------- PARTICLE ANIMATION ---------- */
+(function(){
+  const canvas = document.getElementById('particles');
+  if(!canvas) return;
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const ctx = canvas.getContext('2d');
+  let w, h, dpr, particles = [], raf = null;
+  const mouse = { x: -9999, y: -9999 };
+
+  function resize(){
+    dpr = Math.min(window.devicePixelRatio || 1, 2);
+    const rect = canvas.getBoundingClientRect();
+    w = rect.width; h = rect.height;
+    canvas.width = w * dpr; canvas.height = h * dpr;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    const count = Math.min(Math.floor((w * h) / 16000), w < 768 ? 38 : 90);
+    particles = [];
+    for(let i = 0; i < count; i++){
+      particles.push({
+        x: Math.random() * w,
+        y: Math.random() * h,
+        vx: (Math.random() - 0.5) * 0.35,
+        vy: (Math.random() - 0.5) * 0.35,
+        r: Math.random() * 1.8 + 0.8
+      });
+    }
+  }
+
+  function step(){
+    ctx.clearRect(0, 0, w, h);
+    for(const p of particles){
+      p.x += p.vx; p.y += p.vy;
+      const dx = p.x - mouse.x, dy = p.y - mouse.y;
+      const d2 = dx*dx + dy*dy;
+      if(d2 < 14000){
+        const f = ((14000 - d2) / 14000) * 0.7;
+        const d = Math.sqrt(d2) || 1;
+        p.x += (dx / d) * f;
+        p.y += (dy / d) * f;
+      }
+      if(p.x < 0 || p.x > w) p.vx *= -1;
+      if(p.y < 0 || p.y > h) p.vy *= -1;
+      p.x = Math.max(0, Math.min(w, p.x));
+      p.y = Math.max(0, Math.min(h, p.y));
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+      ctx.fillStyle = 'rgba(190, 230, 250, 0.75)';
+      ctx.fill();
+    }
+    for(let i = 0; i < particles.length; i++){
+      for(let j = i + 1; j < particles.length; j++){
+        const a = particles[i], b = particles[j];
+        const dx = a.x - b.x, dy = a.y - b.y;
+        const d2 = dx*dx + dy*dy;
+        if(d2 < 13000){
+          const alpha = (1 - d2 / 13000) * 0.22;
+          ctx.strokeStyle = 'rgba(0, 180, 216, ' + alpha + ')';
+          ctx.lineWidth = 0.6;
+          ctx.beginPath();
+          ctx.moveTo(a.x, a.y);
+          ctx.lineTo(b.x, b.y);
+          ctx.stroke();
+        }
+      }
+    }
+    raf = requestAnimationFrame(step);
+  }
+
+  window.addEventListener('resize', resize);
+  canvas.addEventListener('mousemove', e => {
+    const r = canvas.getBoundingClientRect();
+    mouse.x = e.clientX - r.left;
+    mouse.y = e.clientY - r.top;
+  });
+  canvas.addEventListener('mouseleave', () => { mouse.x = mouse.y = -9999; });
+
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(en => {
+      if(en.isIntersecting){ if(!raf) step(); }
+      else { cancelAnimationFrame(raf); raf = null; }
+    });
+  });
+  resize();
+  io.observe(canvas);
+})();
+</script>
+</body>
+</html>
